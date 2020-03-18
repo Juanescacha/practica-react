@@ -1,15 +1,12 @@
-import React, { Component } from "react";
+import React from "react";
+//import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 
-function FuncTexto(arg) {
-  return (
-    <div>
-      <h1 className="App-title">{arg.title}</h1>
-    </div>
-  );
-}
+//importamos el otro archivo para que lo pueda usar en este archivo
+import { Body, Body2 } from "./components/Body"; // para importar multiples componeentes sin default
 
+/* Modo de Componente declarado de forma como Clase
 class ClaseTexto extends Component {
   render() {
     return (
@@ -19,6 +16,7 @@ class ClaseTexto extends Component {
     );
   }
 }
+*/
 
 function App() {
   return (
@@ -34,9 +32,9 @@ function App() {
         >
           Learn React
         </a>
-        <ClaseTexto title="Hola desde App" numero={5} />
-        <FuncTexto title="Hola desde Func" />
       </header>
+      <Body title="Hola desde Func" />
+      <Body2 title="Hola desde Func" />
     </div>
   );
 }
