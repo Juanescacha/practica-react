@@ -1,10 +1,8 @@
 import React from "react";
-//import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
-
-//importamos el otro archivo para que lo pueda usar en este archivo
 import { Body, Body2 } from "./components/Body"; // para importar multiples componeentes sin default
+import Counter from "./components/Counter";
 
 /* Modo de Componente declarado de forma como Clase
 class ClaseTexto extends Component {
@@ -35,6 +33,7 @@ function App() {
       </header>
       <Body title="Hola desde Func" />
       <Body2 title="Hola desde Func" />
+      <Counter />
     </div>
   );
 }
